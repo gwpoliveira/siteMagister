@@ -1,0 +1,22 @@
+.card {
+    background-color: rebeccapurple;
+    border-radius: 10px;
+    width: 100%; /* Ajuste para ocupar a largura do contêiner */
+    /* Remova width e height */
+}
+
+.card:hover {
+    animation-name: rotate;
+    animation-duration: 0.7s;
+    animation-direction: reverse;
+    border-radius: 10px; /* Mantenha o mesmo raio de borda no hover */
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
