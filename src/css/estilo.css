@@ -81,7 +81,8 @@ body {
     display: grid;
     place-items: center;
     padding: 1rem;
-    background: #45a049;
+    background: #424bcc;
+    border-radius: 1.2rem;
 }
 
 /* Estilo para o formulário em si */
@@ -116,7 +117,7 @@ textarea,
 select {
     margin-bottom: 1rem;
     color: white;
-    background: #6b966e;
+    background: #559bb1;
     border: 0.125rem solid transparent;
     border-radius: 1.125rem;
     transition: border-color 0.3s, box-shadow 0.3s;
@@ -148,16 +149,12 @@ textarea {
 
 /* Estilos para o botão de envio do formulário */
 button {
-    color: rgb(7, 0, 109);
-    background: #6b966e;
+    color: rgb(30, 21, 168);
+    background: #9ad19e;
     border: 0.125rem solid transparent;
-    border-radius: 1.125rem;
+    border-radius: 1.5rem;
     transition: border-color 0.3s, box-shadow 0.3s;
-}
-
-/* Estilos para o botão quando estiver desabilitado */
-button:disabled {
-    cursor: not-allowed;
+    
 }
 
 /* Estilos para a mensagem de sucesso */
