@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href='/src/ico/favicon.ico' type="image/x-icon">
-    <title>Contaro</title>
+    <title>Formulário Promocional</title>
     <link rel="stylesheet" href="/src/css/estilo.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -100,51 +100,104 @@
     <section class="secaoContato">
         
         <div class="contato container my-5 ">
-            <h2 class="mb-5 ms-4">Formulário de Contato</h2>
+            <h2 class="mb-5 ms-4 text-center">Formulário Promocional Instituto Magister de Ensino</h2>
             <div class="container">
                 <div class="row">
                   <div class="col-md-4 col-lg-4 col-xs-12 fs-5">
-                        <h3 class="mb-4">Entre em contato conosco ao completar o formulário.</h3>
-                        <h5 class="mb-4">
-                            Serviço de Atendimento ao Cliente (SAC)</h5>
-                        <p>
-                            Nossa Ouvidoria atua na defesa dos interesses e direitos dos alunos, pais e funcionários 
-                            da instituição, sendo o canal apropriado para receber suas opiniões, avaliá-las e 
-                            encaminhá-las às áreas responsáveis. Clique aqui!
-                        </p>
-                        <p>
-                            Se preferir, entre em contato diretamente com a Ouvidora, Fernanda Maciel, pelo e-mail:
-                            ouvidoria@faespi.com.br
-                        </p>
+                        
+                        
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content rounded-4 shadow">
+                              <div class="modal-body p-5">
+                                <h2 class="fw-bold mb-0 text-center text-primary">TESTE BOLSA!!</h2>
+                        
+                                <ul class="d-grid gap-4 my-5 list-unstyled small">
+                                  <li class="d-flex gap-4">
+                                    <svg class="bi text-body-secondary flex-shrink-0" width="48" height="48"><use xlink:href="#grid-fill"></use></svg>
+                                    <div>
+                                        <h5 class="mb-0 text-center">Bolsa de até</h5>
+                                        
+                                        <h2 class="mb-0 text-center">50%</h2>
+                                      
+                                    </div>
+                                  </li>
+                                  <li class="d-flex gap-4">
+                                    <svg class="bi text-warning flex-shrink-0" width="48" height="48"><use xlink:href="#bookmark-star"></use></svg>
+                                    <div>
+                                      <h5 class="mb-1 text-center">Não perca essa oportunidade!</h5>
+                                      <h5 class="mt-5 text-primary">Teste dia 15/12/2023</h5>
+                                    </div>
+                                  </li>
+                                 
+                                </ul>
+                                
+                              </div>
+                            </div>
+                          </div>
 
                     </div>
 
                   <div class="col-md-8 col-lg-8 col-xs-12">
                     <div class="form">
                         <form action="https://formsubmit.co/ajax/matriculasmagister@faespi.com.br" method="post" data-form>
-                            <label for="contato">Contato</label>
-                            <br>
-                            <label for="nome">Nome*:</label>
-                            <input type="text" id="nome" name="nome" required>
+                            <label for="nomeAluno">Nome completo do estudante*:</label>
+                            <input type="text" id="nomeAluno" name="nomeAluno" required>
+
+                            <label for="nomeResponsavel">Nome do responsável*:</label>
+                            <input type="text" id="nomeResponsavel" name="nomeResponsavel" required>
                             
                             <label for="email">Email*:</label>
                             <input type="email" id="email" name="email" required>
                             
-                            <label for="telefone">DDD+Telefone*(Apenas os números):</label>
+                            <label for="telefone">DDD+Telefone para contato*(Apenas os números):</label>
                             <input type="tel" id="telefone" name="telefone" required>
                             
-                            <label for="assunto">Assunto*:</label>
-                            <input type="text" id="assunto" name="assunto" required>
-                            
-                            <label for="unidade">Selecione a unidade</label>
+                            <label for="endereco">Endereço completo:</label>
+                            <textarea id="endereco" name="endereco" rows="4" required></textarea>
+
+                            <label for="filhos">Quantos Irmãos o candidato tem?</label>
+                            <select id="filhos" name="filhos" required>
+                                <option value="separador"> ----- </option>
+                                <option value="Um">Um</option>
+                                <option value="Dois">Dois</option>
+                                <option value="Tres ou Mais">Três ou Mais</option>
+                                <option value="Nao tem">Unidade Primavera</option>
+                            </select>
+
+                            <label for="escolaAntiga">Onde o candidato estuda atualmente?*:</label>
+                            <input type="text" id="escolaAntiga" name="escolaAntiga" required>
+                                                                                 
+                            <label for="unidade">Selecione a unidade que deseja concorrer a bolsa</label>
                             <select id="unidade" name="unidade" required>
                                 <option value="separador"> ----- </option>
                                 <option value="Unidade Primavera">Unidade Primavera</option>
                                 <option value="Unidade Bela Vista">Unidade Bela Vista</option>
                             </select>
+
+                            <label for="serie">Qual nível e série desejam concorrer?</label>
+                            <select id="serie" name="serie" required>
+                                <option value="separador"> ----- </option>
+                                <option value="Maternal Babay">Maternal Babay</option>
+                                <option value="Maternal I 1º ano">Maternal I 1º ano</option>
+                                <option value="Maternal I 2º ano">Maternal I 2º ano</option>
+                                <option value="Maternal I 3º ano">Maternal I 3º ano</option>
+                                <option value="Fundamental I 1º ano">Fundamental I 1º ano</option>
+                                <option value="Fundamental I 2º ano">Fundamental I 2º ano</option>
+                                <option value="Fundamental I 3º ano">Fundamental I 3º ano</option>
+                                <option value="Fundamental I 4º ano">Fundamental I 4º ano</option>
+                                <option value="Fundamental I 5º ano">Fundamental I 5º ano</option>
+                                <option value="Fundamental II 6º ano">Fundamental II 6º ano</option>
+                                <option value="Fundamental II 7º ano">Fundamental II 7º ano</option>
+                                <option value="Fundamental II 8º ano">Fundamental II 8º ano</option>
+                                <option value="Fundamental II 9º ano">Fundamental II 9º ano</option>
+                                <option value="1ª Série do Ensino Médio">1ª Série do Ensino Médio</option>
+                                <option value="2ª Série do Ensino Médio">2ª Série do Ensino Médio</option>
+                                <option value="3ª Série do Ensino Médio">3ª Série do Ensino Médio</option>
+
+                            </select>
                             
                             <label for="mensagem">Mensagem:</label>
-                            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                            <textarea id="mensagem" name="mensagem" rows="4"></textarea>
                             
                             <button type="submit" class='btn btn-primary mt-5' data-button>Enviar</button>
                             

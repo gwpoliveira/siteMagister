@@ -137,6 +137,7 @@ select:focus {
 
 /* Estilos para rótulos de formulário */
 label {
+    margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     color: aliceblue;
 }
@@ -144,6 +145,11 @@ label {
 /* Estilos específicos para textarea */
 textarea {
     min-height: 12.5rem;
+    resize: vertical;
+}
+
+#endereco {
+    min-height: 0.5rem;
     resize: vertical;
 }
 
